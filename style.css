@@ -144,8 +144,22 @@ img {
   transform: translate(-50%, -50%);
 }
 
+@keyframes slideDown {
+  0% { max-height: 0px; overflow: hidden; }
+  10% { max-height: 100px; }
+  35% { max-height: 300px; }
+  55% { max-height: 450px; }
+  70% { max-height: 600px; }
+  90% { max-height: 900px; }
+  100% { max-height: none; overflow: auto; }
+}
+
 .modal-show {
   display: block;
+
+  animation-name: slideDown;
+  animation-duration: 1s;
+  animation-timing-function: linear;
 }
 
 .main-nav {
