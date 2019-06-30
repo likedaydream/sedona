@@ -342,6 +342,7 @@ img {
 .main-footer-developer-link svg {
   width: 115px;
   height: 41px;
+  overflow: hidden;
 
   vertical-align: middle;
 }
